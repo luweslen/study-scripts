@@ -4,6 +4,8 @@
 
 ## 📝 **Descrição**
 
+Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
+
 - Estudar os scripts de deploy de projetos da empresa;
 - Rodar comandos de terminal como dos scripts usando o Child Process no node;
 - Fazer um script que roda os seguintes passos:
@@ -31,11 +33,11 @@
 
 O **módulo** child_process nos permite **acessar** as **funcionalidades** do sistema operacional **executando** qualquer **comando do sistema** dentro de um **processo filho**.
 
-### **Exemplo**
+### **Projeto Exemplo**
 
-Foi criado um projeto exemplo utilizando Node e Javascript. Pode acessar o projeto na pasta `example-child-process`.
+Foi criado um projeto exemplo utilizando o módulo child_process. O projeto se encontra na pasta `example-child-process`.
 
-#### **Rodar**
+#### **Rodar o Projeto**
 
 Execute os comandos abaixo:
 
@@ -43,32 +45,16 @@ Execute os comandos abaixo:
 
 `yarn dev`
 
-Script principal do projeto:
-
-```js
-const { execSync } = require("child_process");
-
-function main() {
-  try {
-    execSync("mkdir -p teste");
-    execSync("cd teste && mkdir teste.txt");
-  } catch (e) {
-    console.log(e);
-  }
-}
-
-main();
-```
-
 ## 🤔 Desenvolver um script que...
 
-1. `mongodump --uri=process.env.MONGO_URL_FROM`
-2. `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
-3. Limpa os arquivos de dump
+1. Rode o comadno `mongodump --uri=process.env.MONGO_URL_FROM`
+2. Em seguide o comando `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
+3. Por fim, apaga a pasta dump e os arquivos dentro dela
 
 ### **Projeto**
 
-Node e Javascript.
+Foi feito um pequeno script com _NodeJs_ e o módulo _child_process_.
+O projeto se encontra na pasta `task-make-script`.
 
 #### **Rodar**
 
@@ -99,7 +85,7 @@ Para rodar o projeto é necessário seguir alguns passos:
 
 <table>
   <tr>
-    <td align="center"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/36344130?s=460&u=8f38afb60832d4576570ab1672894ac935e65db6&v=4" width="100px;" alt=""/><br /><sub><b><a href="https://linkedin.com/in/lucianoweslen11" title="Luciano">Luciano W. da Silva</a></b></sub><br/>Desenvolvedor Web</td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/36344130?s=460&u=8f38afb60832d4576570ab1672894ac935e65db6&v=4" width="100px;" alt=""/><br /><sub><b><a href="https://linkedin.com/in/lucianoweslen11" title="Luciano">Luciano W. da Silva</a></b></sub></td>
   </tr>
 </table>
 
