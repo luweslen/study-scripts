@@ -35,7 +35,9 @@ O **módulo** child_process nos permite **acessar** as **funcionalidades** do si
 
 Foi criado um projeto exemplo utilizando Node e Javascript. Pode acessar o projeto na pasta `example-child-process`.
 
-Caso queira rodar o projeto, execute os comandos abaixo:
+#### **Rodar**
+
+Execute os comandos abaixo:
 
 `cd example-child-process`
 
@@ -57,6 +59,41 @@ function main() {
 
 main();
 ```
+
+## 🤔 Desenvolver um script que...
+
+1. `mongodump --uri=process.env.MONGO_URL_FROM`
+2. `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
+3. Limpa os arquivos de dump
+
+### **Projeto**
+
+Node e Javascript.
+
+#### **Rodar**
+
+Para rodar o projeto é necessário seguir alguns passos:
+
+- Primeiro, ter o Mongo Database Tools instalado (https://www.mongodb.com/try/download/database-tools).
+- Segundo, criar através do **Mongo Compass** localmente um **banco** chamado _test_ e adicionar uma **collection** chamada _peoples_ com alguns dados.
+- Terceiro, crie um arquivo chamado `.env` dentro da pasta do projeto e coloque as de acordo com o que você queira fazer.
+
+  ```
+  MONGO_URL_FROM=mongodb://localhost/testfrom
+  MONGO_URL_TO=mongodb://localhost/testto
+  MONGO_DB=testto
+  MONGO_COLLECTION=peoples
+  ```
+
+- Por fim, execute os seguintes comandos:
+
+  ```bash
+  cd task-make-script
+  ```
+
+  ```bash
+  yarn dev
+  ```
 
 ## 👨‍💻 Feito por
 
