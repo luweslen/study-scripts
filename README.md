@@ -2,7 +2,7 @@
   <img src=".github/cover.svg" >
 </div>
 
-## 📝 Descrição
+## 📝 **Descrição**
 
 - Estudar os scripts de deploy de projetos da empresa;
 - Rodar comandos de terminal como dos scripts usando o Child Process no node;
@@ -11,7 +11,7 @@
   2. `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
   3. Limpa os arquivos de dump
 
-## Analise dos scripts de deploy dos projetos
+## 📈 **Analise dos scripts de deploy dos projetos**
 
 | Comando    | O que faz?       | O que faz?                                                                          |
 | ---------- | ---------------- | ----------------------------------------------------------------------------------- |
@@ -26,6 +26,37 @@
 | ------ |
 | `&&`   |
 | `;`    |
+
+## ▶️ **Testar a biblioteca Child Process no node**
+
+O **módulo** child_process nos permite **acessar** as **funcionalidades** do sistema operacional **executando** qualquer **comando do sistema** dentro de um **processo filho**.
+
+### **Exemplo**
+
+Foi criado um projeto exemplo utilizando Node e Javascript. Pode acessar o projeto na pasta `example-child-process`.
+
+Caso queira rodar o projeto, execute os comandos abaixo:
+
+`cd example-child-process`
+
+`yarn dev`
+
+Script principal do projeto:
+
+```js
+const { execSync } = require("child_process");
+
+function main() {
+  try {
+    execSync("mkdir -p teste");
+    execSync("cd teste && mkdir teste.txt");
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+main();
+```
 
 ## 👨‍💻 Feito por
 
