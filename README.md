@@ -12,6 +12,7 @@ Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
   1. `mongodump --uri=process.env.MONGO_URL_FROM`
   2. `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
   3. Limpa os arquivos de dump
+- Executar comandos git usando child_process
 
 ## 📈 **Analise dos scripts de deploy dos projetos**
 
@@ -80,6 +81,10 @@ Para rodar o projeto é necessário seguir alguns passos:
   ```bash
   yarn dev
   ```
+
+## Comandos GIT no child_process
+
+
 
 ## 👨‍💻 Feito por
 
