@@ -9,9 +9,10 @@ async function main() {
 
     await exec('git add .', { cwd: `${foldePath}`})
 
-    const { stdout: outGitStatus } = await exec('git commit -m "Teste"', { cwd: `${foldePath}`})
+    const { stdout: outGitStatus } = await exec('git status', { cwd: `${foldePath}`})
 
-    console.log('stdout:', outGitStatus);
+    const branch = outGitStatus.split(" ")[2].replace("Your", "")
+
 
   } catch (e) {
     console.log(e)
