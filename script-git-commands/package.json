@@ -1,0 +1,12 @@
+{
+  "name": "example-child-process",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "init-repo": "node initRepository.js"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
