@@ -30,7 +30,7 @@ Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
 | `&&`   |
 | `;`    |
 
-## ▶️ **Testar a biblioteca Child Process no python**
+## ▶️ **Testar a biblioteca Child Process no node**
 
 O **módulo** child_process nos permite **acessar** as **funcionalidades** do sistema operacional **executando** qualquer **comando do sistema** dentro de um **processo filho**.
 
@@ -84,7 +84,9 @@ Para rodar o projeto é necessário seguir alguns passos:
 
 ## Comandos GIT no child_process
 
+Desenvolver um **projeto** usando *Node* e *child_process* para rodar os comandos do git.
 
+O projeto se encontra na pasta *script-git-commands*.
 
 ## 👨‍💻 Feito por
 

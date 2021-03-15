@@ -7,7 +7,7 @@
     "init-repo": "node src/initRepo.js",
     "pull-repo": "node src/pullRepo.js",
     "push-repo": "node src/pushRepo.js",
-    "test-repo": "node src/test.js"
+    "create-branch": "node src/createBranch.js"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
