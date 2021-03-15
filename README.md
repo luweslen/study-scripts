@@ -30,7 +30,7 @@ Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
 | `&&`   |
 | `;`    |
 
-## ▶️ **Testar a biblioteca Child Process no node**
+## ▶️ **Testar a biblioteca Child Process no python**
 
 O **módulo** child_process nos permite **acessar** as **funcionalidades** do sistema operacional **executando** qualquer **comando do sistema** dentro de um **processo filho**.
 
