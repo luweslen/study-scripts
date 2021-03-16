@@ -13,8 +13,10 @@ Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
   2. `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
   3. Limpa os arquivos de dump
 - Executar comandos git usando child_process
+- Comandos GIT no child_process
+- Script que leia um .json e crie um arquivo .vue
 
-## 📈 **Analise dos scripts de deploy dos projetos**
+## **Analise dos scripts de deploy dos projetos**
 
 | Comando    | O que faz?       | O que faz?                                                                          |
 | ---------- | ---------------- | ----------------------------------------------------------------------------------- |
@@ -30,7 +32,7 @@ Tarefas realizadas no estágio na área de desenvolvimento web na empresa Tilit.
 | `&&`   |
 | `;`    |
 
-## ▶️ **Testar a biblioteca Child Process no node**
+## **Testar a biblioteca Child Process no node**
 
 O **módulo** child_process nos permite **acessar** as **funcionalidades** do sistema operacional **executando** qualquer **comando do sistema** dentro de um **processo filho**.
 
@@ -46,7 +48,7 @@ Execute os comandos abaixo:
 
 `yarn dev`
 
-## 🤔 Desenvolver um script que...
+## **Desenvolver um script que...**
 
 1. Rode o comadno `mongodump --uri=process.env.MONGO_URL_FROM`
 2. Em seguide o comando `mongorestore --uri=process.env.MONGO_URL_TO --db=process.env.MONGO_DB - collection=process.env.MONGO_COLLECTION dump/test/process.env.MONGO_COLLECTION.bson`
@@ -82,11 +84,48 @@ Para rodar o projeto é necessário seguir alguns passos:
   yarn dev
   ```
 
-## Comandos GIT no child_process
+## **Comandos GIT no child_process**
 
 Desenvolver um **projeto** usando *Node* e *child_process* para rodar os comandos do git.
 
 O projeto se encontra na pasta *script-git-commands*.
+
+
+## **Script que leia um .json e crie um arquivo .vue**
+
+- usar a biblioteca fs para ler um json;
+- ao ler o conteúdo gerar um novo arquivo `Form.vue` 
+- este vue deverá conter componentes `t-input-text` e `t-input-select` na área de template
+- rodar o prettier no arquivo gerado para formnatar
+
+### **Projeto Exemplo**
+
+Foi criado um projeto exemplo utilizando o NodeJS. O projeto se encontra na pasta `form-builder-vue`.
+
+#### **Rodar o Projeto**
+
+Execute os comandos abaixo:
+
+**Primeiro:**
+`cd form-builder-vue`
+
+**Segundo:**
+`yarn install`
+
+**Terceiro:**
+Coloque na pasta `src/jsons` um arquivo json neste formato:
+  ```json
+  {
+    "name": {
+      "type": "text",
+      "label": "label",
+      "placeholder": "Nome"
+    }
+  }
+  ```
+
+**Quarto:**
+`yarn dev`
 
 ## 👨‍💻 Feito por
 

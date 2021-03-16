@@ -1,0 +1,15 @@
+{
+  "name": {
+    "type": "text",
+    "label": "label",
+    "placeholder": "Nome"
+  },
+  "gender": {
+    "type": "select",
+    "options": ["masculino", "feminino"],
+    "label": "Gênero"
+  },
+  "diferente": {
+    "type": "text"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "form-builder-vue",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/main.js"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "prettier": "2.2.1"
+  }
+}
